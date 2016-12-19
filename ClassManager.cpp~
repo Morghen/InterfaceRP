@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "ClassManager.h"
+#include <limits>
 
 using namespace std;
 
@@ -28,8 +29,12 @@ void ClassManager()
 			case 5:
 				exit(1);
 			default:
+<<<<<<< HEAD
 				cin.clear(); // effacer les bits d'erreurs 
 				cin.ignore( numeric_limits<streamsize>::max(), '\n' ); // supprimer la ligne erronée dans le buffer
+=======
+				cin.ignore();
+>>>>>>> cd76ff11184ce698d38a17eda8e4cea39859907e
 		}
 	}
 }

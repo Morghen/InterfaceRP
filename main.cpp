@@ -11,7 +11,7 @@ int main()
 {
 	while(1)
 	{
-		cout << "*** Menu principal ***" << endl << endl;
+		cout << "*** Menu principal ***" <<endl << endl;
 		cout << "1. Jets de dés" << endl;
 		cout << "2. Gestion des classes" << endl;
 		cout << "3. Gestion des compétences" << endl;
