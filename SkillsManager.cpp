@@ -1,0 +1,32 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string.h>
+#include "SkillsManager.h"
+
+using namespace std;
+
+
+void SkillsManager()
+{
+	while(1)
+	{
+		cout << "*** Gestion des compétences ***" << endl;
+		cout << "1. Attaques physiques" << endl;
+		cout << "2. Attaques magiques" << endl;
+		cout << "3. Soins/Buffs" << endl;
+		cout << "4. Damages over time/Débuffs" << endl;
+		cout << "5. Menu précédent" << endl << endl;
+		cout << "Votre choix : ";
+		int ch;
+		cin >> ch;
+		switch(ch)
+		{
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+				exit(1);
+		}
+	}
+}
