@@ -10,13 +10,15 @@ int main()
 {
 	while(1)
 	{
-		cout << "*** Menu principal ***" << endl << endl;
+		cout << "*** Menu principal ***" <<endl << endl;
 		cout << "1. Jets de dés" << endl;
 		cout << "2. Gestion des classes" << endl;
 		cout << "3. Gestion des compétences" << endl;
 		cout << "4. Quitter" << endl << endl;
 		cout << "Votre choix : ";
 		int ch;
+		cin.clear();
+		cin.ignore();
 		cin >> ch;
 		switch(ch)
 		{
@@ -33,6 +35,10 @@ int main()
 				break;
 			case 4:
 				exit(1);
+			default:
+				ch = 'q';
+				cin.clear();
+				cin.ignore();
 		}
 	}
 }

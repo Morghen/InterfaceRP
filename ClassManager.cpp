@@ -27,6 +27,8 @@ void ClassManager()
 			case 4:
 			case 5:
 				exit(1);
+			default:
+				cin.ignore();
 		}
 	}
 }
