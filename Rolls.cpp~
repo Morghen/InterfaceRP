@@ -50,6 +50,9 @@ void Rolls()
 				break;
 			case 6:
 				return;
+			default:
+				cin.clear(); // effacer les bits d'erreurs 
+				cin.ignore( numeric_limits<streamsize>::max(), '\n' ); // supprimer la ligne erronée dans le buffer
 		}
 	}
 }
@@ -63,7 +66,6 @@ int DiceRoll(int nb)
 	int seed;
 	long tps;
 	seed = time(&tps);
-	seed += time(&tps)*nb; 
 	srand(seed);
 	res = (rand() % nb) + 1;
 	return res;

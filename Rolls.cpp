@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <limits>
 
 using namespace std;
 
@@ -50,6 +51,9 @@ void Rolls()
 				break;
 			case 6:
 				return;
+			default:
+				cin.clear(); // effacer les bits d'erreurs 
+				cin.ignore( numeric_limits<streamsize>::max(), '\n' ); // supprimer la ligne erronée dans le buffer
 		}
 	}
 }

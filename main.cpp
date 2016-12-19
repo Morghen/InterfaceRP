@@ -3,6 +3,7 @@
 #include "Rolls.h"
 #include "ClassManager.h"
 #include "SkillsManager.h"
+#include <limits>
 
 using namespace std;
 
@@ -33,6 +34,9 @@ int main()
 				break;
 			case 4:
 				exit(1);
+			default:
+				cin.clear(); // effacer les bits d'erreurs 
+				cin.ignore( numeric_limits<streamsize>::max(), '\n' ); // supprimer la ligne erronée dans le buffer
 		}
 	}
 }
